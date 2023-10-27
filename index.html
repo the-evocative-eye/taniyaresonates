@@ -4,9 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <div>Hii, this is me!</div>
+    <header>
+        <div class="user">
+            <img src="photo.jpeg" alt="">
+            <h3 class="name">Taniya Agarwal</h3>
+            <p class="post">Web Developer</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="menu" class="fas fa-bars"></div>
+    <section class="home" id="home">
+        <h3>HI THERE !</h3>
+<h1>I am <span>Taniya Agarwal</span></h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ratione sit minima, reprehenderit repudiandae cupiditate atque blanditiis earum velit quisquam! Consequatur illo obcaecati neque veniam praesentium nesciunt eum nam a?Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, perspiciatis?
+</p>
+    <a href="#about"><button class="btn">About me <i class="fas fa-user"></i></button></a>
+</section>
+<section class="about" id="about">
+    <h1 class="heading"><span>About</span>Me</h1>
+    <div class="row">
+        <div class="info">
+            <h3><span>Name :</span>Taniya Agarwal</h3>
+            <h3><span>Qualification : </span>BTech</h3>
+            <h3><span>Post : </span>Software Engineer</h3>
+            <h3><span>Language : </span>Hindi,English</h3>
+            <a href="https://drive.google.com/file/d/1-V0HLuhwtuPm-Lhi_eg1hNGBWY2HpwwN/view?usp=sharing"><button class="btn">Download CV <i class="fas fa-download"></i></button></a>
+        </div>
+        <div class="counter">
+            <div class="box">
+                <span>0+</span>
+                <h3>Internship Experience</h3>
+            </div>
+            <div class="box">
+                <span>2+</span>
+                <h3>Project completed</h3>
+            </div>
+
+            <div class="box">
+                <span>2.0</span>
+                <h3>Flipart Grid</h3>
+        </div>
+    </div>
+</div>
+</section>
+<section class="education" id="education">
+    <h1 class="heading">My<span>Education</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2024</span>
+            <h3>Bachelor of Technology</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat in laboriosam ducimus mollitia neque dolor numquam sapiente sunt recusandae reprehenderit ratione dolores ex labore suscipit, repellendus soluta rerum nisi?</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2018</span>
+            <h3>Class 12th</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat in laboriosam ducimus mollitia neque dolor numquam sapiente sunt recusandae reprehenderit ratione dolores ex labore suscipit, repellendus soluta rerum nisi?</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2016</span>
+            <h3>Class 10th</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat in laboriosam ducimus mollitia neque dolor numquam sapiente sunt recusandae reprehenderit ratione dolores ex labore suscipit, repellendus soluta rerum nisi?</p>
+        </div>
+    </div>
+</section>
+<section class="project" id="project">
+    <h1 class="heading">My<span>Projects</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <a href="https://drive.google.com/file/d/1CeZmToAkHnyVl9okB-HlzyV1fksbYhJ2/view?usp=sharing"><p>Morgan <span>Stanley</span></p></a>
+            <img src="img3.jpg" alt="">
+        </div>
+        <div class="box">
+           <a href="https://github.com/the-evocative-eye/CommandLineInterface"><p>CommandLine<span>Interface(Git)</span></p></a>
+            <img src="img2.jpg" alt="">
+        </div>
+        <div class="box">
+            <a href="https://github.com/the-evocative-eye/Tech-Mirror"><p>Tech-<span>Mirror(Git)</span></p></a>
+            <img src="img1.jpg" alt="">
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <h1 class="heading"><span>Contact</span> Me</h1>
+    <div class="row">
+        <div class="content">
+            <h3 class="title">Contact Info</h3>
+            <div class="info">
+                <h3><i class="fas fa-envelope"></i>agarwaltaniya49@gmail.com</h3>
+                <h3><i class="fas fa-phone"></i>9368732941</h3>
+                <h3><i class="fas fa-phone"></i>7520598347</h3>
+                <h3><i class="fas fa-map-marker-alt"></i>Agra, Uttar Pradesh, India-282005</h3>
+            </div>
+        </div>
+        <form method="POST">
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="text" placeholder="project" class="box">
+            <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+           <button type="Submit" id="button">Send <i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
+</section>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
